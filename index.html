@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layanan ISP</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="smartphone">
+        <div class="screen">
+            <div id="displayScreen" class="display-screen">
+                <input type="text" id="displayInput" readonly>
+            </div>
+            <div id="menuScreen" class="menu-screen hidden">
+            </div>
+        </div>
+        <div id="keypadContainer">
+            <div class="keypad">
+                <div class="key" onclick="pressKey('1')">1<span>QZ</span></div>
+                <div class="key" onclick="pressKey('2')">2<span>ABC</span></div>
+                <div class="key" onclick="pressKey('3')">3<span>DEF</span></div>
+                <div class="key" onclick="pressKey('4')">4<span>GHI</span></div>
+                <div class="key" onclick="pressKey('5')">5<span>JKL</span></div>
+                <div class="key" onclick="pressKey('6')">6<span>MNO</span></div>
+                <div class="key" onclick="pressKey('7')">7<span>PQRS</span></div>
+                <div class="key" onclick="pressKey('8')">8<span>TUV</span></div>
+                <div class="key" onclick="pressKey('9')">9<span>WXYZ</span></div>
+                <div class="key" onclick="pressKey('*')">*</div>
+                <div class="key" onclick="pressKey('0')">0<span>+</span></div>
+                <div class="key" onclick="pressKey('#')">#</div>
+            </div>
+        </div>
+        <div class="action-buttons">
+            <button class="cancel" onclick="cancelAction()">Cancel</button>
+            <button class="call" onclick="handleCall()">Send</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
